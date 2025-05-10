@@ -57,14 +57,15 @@ class _MyAppState extends State<MyApp> {
                                   TextButton(
                                     onPressed: () {
                                       Navigator.pop(context);
-                                      scanned = false;
                                     },
                                     child: const Text("OK"),
                                   ),
                                 ],
                               );
                             },
-                          );
+                          ).then((onValue) {
+                            scanned = false;
+                          });
                         },
                       );
                     },

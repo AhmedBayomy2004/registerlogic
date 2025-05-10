@@ -51,7 +51,7 @@ class ApiService {
           e.type == DioExceptionType.unknown) {
         return "Can't register, check your internet connection";
       } else {
-        return "User not registered for this event";
+        return "User is not registered for this event";
       }
     }
   }
